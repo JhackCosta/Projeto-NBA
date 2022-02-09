@@ -44,6 +44,16 @@ rename table TABLE_NAME to ranking;
 
 #################################################################
 
+# Adicionando chave primaria#
+ALTER TABLE times ADD PRIMARY KEY(TEAM_ID);
+
+#################################################################
+
+# Adicionando chave estrangeira#
+alter table ranking add foreign key(TEAM_ID) references times(TEAM_ID);
+
+#################################################################
+
 # testando pegando o resuldado # 
 SELECT cast(substring_index(Home_record, '-', 1) as signed) as resultado FROM ranking 
 group by resultado
@@ -52,9 +62,9 @@ order by resultado desc;
 #################################################################
 
 # Pegando o nome completo dos times # 
-select r.team, t.nickname from ranking as  r
+select distinct r.team, t.nickname from ranking as  r
 inner join times as t
-on r.TEAM_ID = t.TEAM_ID;
+on r.TEAM_ID = t.TEAM_ID limit 0,5;
 
 #################################################################
 
@@ -79,20 +89,22 @@ ORDER by vitorias desc limit 0,5;
 #################################################################
 
 #Selecionando as arenas com maior capacidade de cada time#
+
 select r.TEAM, t.NICKNAME, t.ARENA, t.ARENACAPACITY  from times as t
 inner join ranking as r
 on t.TEAM_ID = r.TEAM_ID 
 group by ARENACAPACITY
-order by ARENACAPACITY desc limit 0,10;
+order by ARENACAPACITY desc limit 0,5;
 
 #################################################################
 
 # Times mais antigos #
+
 select r.TEAM, t.NICKNAME, t.YEARFOUNDED from times as t
 inner join ranking as r
 on t.TEAM_ID = r.TEAM_ID 
 group by YEARFOUNDED
-order by YEARFOUNDED asc limit 0,10;
+order by YEARFOUNDED asc limit 0,5;
 
 
 
