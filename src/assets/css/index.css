@@ -1,0 +1,236 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#114488  !important;
+}
+
+.posicao{
+    text-align: center !important;
+}
+
+.um{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.dois{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.tres{
+    width:30vh !important;
+    height:30vh !important;  
+
+}
+
+.quatro{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.cinco{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.seis{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.sete{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.oito{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.nove{
+    width:30vh !important;
+    height:30vh !important;
+}
+.dez{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.onze{
+    width:30vh !important;
+    height:30vh !important;
+}
+.doze{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.treze{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.quartoze{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.quinze{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.dezesseis{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.dezessete{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+
+.dezoito{
+    width:30vh !important;
+    height:30vh !important;
+}
+.dezenove{
+    width:30vh !important;
+    height:30vh !important;
+}
+.vinte{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vinteum{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vintedois{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vintetres{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vintequatro{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vintecinco{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vinteseis{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vintesete{
+    width:30vh !important;
+    height:30vh !important;
+}
+.vinteoito{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.vintenove{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.trinta{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.trintaum{
+    width:30vh !important;
+    height:30vh !important;
+}   
+
+.trintadois{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.trintatres{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.trintaquatro{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.trintacinco{
+    width:30vh !important;
+    height:30vh !important;
+}
+
+.container-card{
+    display: grid;
+    margin: 80px;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 300px;
+
+}
+
+.tamanho{
+    height: 100% !important;
+    width: 100% !important;
+
+}
+
+.card{
+    background-color: #114488!important;
+    height: 320px; 
+}
+
+
+.card:hover {
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 0px 30px 20px #FFFFFF, 0px 0px 4px 0px rgb(11 44 88);
+    z-index: 10;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.pictures{
+    width:18vh !important;
+    height: 27vh !important;
+    border-radius: 20vh !important;
+}
+
+.pictures{
+    width:30vh !important;
+    border-radius:30vh !important;
+}
+
+
+@media (max-width:650px) {
+    .container-card { 
+        flex-direction: column;
+    }
+}
