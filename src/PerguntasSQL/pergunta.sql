@@ -1,4 +1,4 @@
- perguntas-Jeff
+ 
 CREATE TABLE `detalhes_jogo` (
   `id_jogo` varchar(8) NOT NULL,
   `id_time` varchar(10) NOT NULL,
@@ -41,4 +41,4 @@ SELECT nome_jogador, sum(qtd_cestas_feitas) AS cestinhas FROM detalhes_jogo GROU
 Quais jogadores mais deram assistências?
 
 SELECT nome_jogador, sum(qtd_ast) AS assist FROM detalhes_jogo GROUP BY nome_jogador ORDER BY assist desc limit 1
-main
+
