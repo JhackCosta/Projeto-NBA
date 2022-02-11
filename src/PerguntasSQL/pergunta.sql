@@ -1,3 +1,4 @@
+ 
 CREATE TABLE `detalhes_jogo` (
   `id_jogo` varchar(8) NOT NULL,
   `id_time` varchar(10) NOT NULL,
@@ -32,3 +33,12 @@ order by roubos desc limit 10;
 select nome_jogador, sum(qtd_bolas_perdidas) as perdidas, sum(qtd_faltas) as faltas from detalhes_jogo  
 group by nome_jogador 
 order by perdidas desc limit 10;
+
+Quais jogadores mais pontuaram?
+
+SELECT nome_jogador, sum(qtd_cestas_feitas) AS cestinhas FROM detalhes_jogo GROUP BY nome_jogador ORDER BY cestinhas DESC LIMIT 10;
+
+Quais jogadores mais deram assistências?
+
+SELECT nome_jogador, sum(qtd_ast) AS assist FROM detalhes_jogo GROUP BY nome_jogador ORDER BY assist desc limit 1
+
